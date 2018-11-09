@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.massinflux.howwillyoudie" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cordova.apache.org/ns/1.0 ">
-  <name>// get unstuck</name>
-  <description>Get Unstuck</description>
+  <name>HWYD</name>
+  <description>How will you die</description>
   <author email="admin@massinflux.com" href="https://massinflux.com">Massinflux</author>
   <content src="index.html"/>
   <access allows-arbitrary-loads-for-media="true" allows-arbitrary-loads-in-web-content="true" allows-local-networking="true" origin="*"/>
