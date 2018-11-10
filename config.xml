@@ -23,7 +23,6 @@
   <platform name="android">
     <allow-intent href="market:*" />
     <preference name="android-minSdkVersion" value="24" />
-    <resource-file src="google-services.json" target="app/google-services.json" />
     <icon density="ldpi" src="res/android/icon/drawable-ldpi-icon.png" />
     <icon density="mdpi" src="res/android/icon/drawable-mdpi-icon.png" />
     <icon density="hdpi" src="res/android/icon/drawable-hdpi-icon.png" />
@@ -47,7 +46,6 @@
   <platform name="ios">
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
-    <resource-file src="GoogleService-Info.plist" />
     <preference name="BackupWebStorage" value="none" />
     <preference name="Orientation" value="all" />
     <icon height="57" src="res/ios/icon/icon.png" width="57" />
