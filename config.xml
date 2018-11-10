@@ -12,6 +12,10 @@
   <allow-intent href="sms:*"/>
   <allow-intent href="mailto:*"/>
   <allow-intent href="geo:*"/>
+  <plugin name="cordova-plugin-whitelist" spec="^1.3.3"/>
+  <plugin name="cordova-plugin-splashscreen" spec="^5.0.2"/>
+  <plugin name="cordova-plugin-device" spec="^2.0.2"/>
+  <engine name="android" spec="^7.0.0"/>
   <platform name="android">
     <allow-intent href="market:*"/>
     <icon density="ldpi" src="res/android/icon/drawable-ldpi-icon.png"/>
@@ -58,6 +62,7 @@
     <icon height="58" src="res/ios/icon/icon-small@2x.png" width="58"/>
     <icon height="87" src="res/ios/icon/icon-small@3x.png" width="87"/>
     <icon height="1024" src="res/ios/icon/icon-1024.png" width="1024"/>
+    <splash src="res/ios/splash/Default-568h@2x~iphone.png" />
     <splash height="1136" src="res/ios/splash/Default-568h@2x~iphone.png" width="640"/>
     <splash height="1334" src="res/ios/splash/Default-667h.png" width="750"/>
     <splash height="2208" src="res/ios/splash/Default-736h.png" width="1242"/>
@@ -72,26 +77,12 @@
     <splash height="480" src="res/ios/splash/Default~iphone.png" width="320"/>
     <splash height="2732" src="res/ios/splash/Default@2x~universal~anyany.png" width="2732"/>
   </platform>
-  <preference name="SplashScreenSpinnerColor" value="#ccffff" />
-  <preference name="Orientation" value="portrait"/>
-  <preference name="AndroidLaunchMode" value="singleTop"/>
-  <preference name="FadeSplashScreen" value="true"/>
-  <preference name="ShowSplashScreenSpinner" value="true"/>
-  <preference name="DisallowOverscroll" value="true"/>
-  <preference name="StatusBarStyle" value="default"/>
-  <preference name="FadeSplashScreenDuration" value="300"/>
-  <preference name="phonegap-version" value="cli-6.5.0"/>
   <preference name="SplashScreen" value="screen"/>
-  <preference name="AutoHideSplashScreen" value="true"/>
-  <preference name="SplashScreenDelay" value="3000"/>
-  <preference name="SplashMaintainAspectRatio" value="true"/>
-  <preference name="android-minSdkVersion" value="26"/>
+  <preference name="AutoHideSplashScreen" value="false" />
+  <preference name="ShowSplashScreenSpinner" value="true"/>
+  <preference name="SplashMaintainAspectRatio" value="true" />
+  <preference name="SplashScreenSpinnerColor" value="#ccffff" />
   <feature name="SplashScreen">
     <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen"/>
-    <param name="onload" value="true"/>
   </feature>
-  <plugin name="cordova-plugin-whitelist" spec="^1.3.3"/>
-  <plugin name="cordova-plugin-splashscreen" spec="^5.0.2"/>
-  <plugin name="cordova-plugin-device" spec="^2.0.2"/>
-  <engine name="android" spec="^7.0.0"/>
 </widget>
