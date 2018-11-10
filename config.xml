@@ -6,6 +6,7 @@
   <content src="index.html" />
   <access allows-arbitrary-loads-for-media="true" allows-arbitrary-loads-in-web-content="true" allows-local-networking="true" origin="*" />
   <allow-navigation href="*" />
+  <access origin="*.pushwoosh.com"/>
   <allow-intent href="http://*/*" />
   <allow-intent href="https://*/*" />
   <allow-intent href="tel:*" />
@@ -16,9 +17,9 @@
   <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
   <plugin name="cordova-plugin-device" spec="^2.0.2" />
   <plugin name="cordova-plugin-firebase" spec="2.0.5" />
-  <plugin name="phonegap-plugin-push" spec="2.0.0" />
+  <plugin name="pushwoosh-pgb-plugin" source="npm" />
   <engine name="android" spec="^7.0.0" />
-  <plugin name="cordova-support-google-services" spec="1.2.1" />
+  <preference name="android-build-tool" value="gradle" />
   <platform name="android">
     <allow-intent href="market:*" />
     <preference name="android-minSdkVersion" value="24" />
