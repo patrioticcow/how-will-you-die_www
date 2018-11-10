@@ -32,7 +32,7 @@
     // Should be called before pushwoosh.onDeviceReady
     document.addEventListener('push-notification', function (event) {
       var notification = event.notification
-      consol.log(notification)
+      console.log(notification)
       // handle push open here
     })
 
@@ -41,6 +41,19 @@
       appid: 'AEA0F-6B15A',
       projectid: 'how-will-you-die'
     })
+
+    pushwoosh.registerDevice(
+      function (status) {
+        var pushToken = status.pushToken
+        console.log(pushToken)
+        console.log(status)
+        // handle successful registration here
+      },
+      function (status) {
+        console.log(status)
+        // handle registration error here
+      }
+    )
   }
 
   document.addEventListener('deviceready', onDeviceReady, false)
