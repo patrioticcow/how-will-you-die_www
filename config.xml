@@ -18,6 +18,7 @@
   <plugin name="cordova-plugin-local-notification" spec="^0.8.4"/>
   <engine name="android" spec="^7.0.0"/>
   <platform name="android">
+    <preference name="android-minSdkVersion" value="27" />
     <allow-intent href="market:*"/>
     <icon density="ldpi" src="res/android/icon/drawable-ldpi-icon.png"/>
     <icon density="mdpi" src="res/android/icon/drawable-mdpi-icon.png"/>
