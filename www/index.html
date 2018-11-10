@@ -32,6 +32,7 @@
     // Should be called before pushwoosh.onDeviceReady
     document.addEventListener('push-notification', function (event) {
       var notification = event.notification
+      consol.log(notification)
       // handle push open here
     })
 
