@@ -20,6 +20,7 @@
     <icon density="xhdpi" src="res/android/icon/drawable-xhdpi-icon.png"/>
     <icon density="xxhdpi" src="res/android/icon/drawable-xxhdpi-icon.png"/>
     <icon density="xxxhdpi" src="res/android/icon/drawable-xxxhdpi-icon.png"/>
+    <splash src="res/android/splash/drawable-land-ldpi-screen.png" />
     <splash density="land-ldpi" src="res/android/splash/drawable-land-ldpi-screen.png"/>
     <splash density="land-mdpi" src="res/android/splash/drawable-land-mdpi-screen.png"/>
     <splash density="land-hdpi" src="res/android/splash/drawable-land-hdpi-screen.png"/>
@@ -71,6 +72,11 @@
     <splash height="480" src="res/ios/splash/Default~iphone.png" width="320"/>
     <splash height="2732" src="res/ios/splash/Default@2x~universal~anyany.png" width="2732"/>
   </platform>
+  <preference name="SplashScreenSpinnerColor" value="#ccffff" />
+  <preference name="Orientation" value="portrait"/>
+  <preference name="AndroidLaunchMode" value="singleTop"/>
+  <preference name="FadeSplashScreen" value="true"/>
+  <preference name="ShowSplashScreenSpinner" value="true"/>
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="StatusBarStyle" value="default"/>
   <preference name="FadeSplashScreenDuration" value="300"/>
@@ -79,7 +85,6 @@
   <preference name="AutoHideSplashScreen" value="true"/>
   <preference name="SplashScreenDelay" value="3000"/>
   <preference name="SplashMaintainAspectRatio" value="true"/>
-  <preference name="FadeSplashScreenDuration" value="300"/>
   <preference name="android-minSdkVersion" value="26"/>
   <feature name="SplashScreen">
     <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen"/>
