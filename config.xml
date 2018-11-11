@@ -85,6 +85,6 @@
   <feature name="SplashScreen">
     <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen"/>
   </feature>
-  <plugin name="pushwoosh-cordova-plugin" spec="~7.2.4"/>
+  <plugin name="pushwoosh-cordova-plugin" spec="7.2.5"/>
   <preference name="android-build-tool" value="gradle"/>
 </widget>
